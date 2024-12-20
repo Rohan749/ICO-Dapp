@@ -1,4 +1,4 @@
-import { TOKEN_ABI, TOKEN_ADDRESS } from "@/constants/constants";
+import { TOKEN_ABI, TOKEN_ADDRESS } from "../constants/constants";
 import { useEffect } from "react";
 import toast from "react-hot-toast";
 import { useWaitForTransactionReceipt, useWriteContract } from "wagmi";

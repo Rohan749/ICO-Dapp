@@ -1,5 +1,5 @@
-import { PLATFORM_ABI, PLATFORM_ADDRESS } from "@/constants/constants";
-import { useBuyToken } from "@/hooks/useBuyToken";
+import { PLATFORM_ABI, PLATFORM_ADDRESS } from "../../constants/constants";
+import { useBuyToken } from "../../hooks/useBuyToken";
 import React, { useState } from "react";
 import { useWriteContract } from "wagmi";
 

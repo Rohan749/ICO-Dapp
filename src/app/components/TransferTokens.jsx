@@ -1,5 +1,5 @@
-import { useTokenTransfer } from '@/hooks/useTokenTransfer';
-import { useUpdateToken } from '@/hooks/useUpdateToken';
+import { useTokenTransfer } from '../../hooks/useTokenTransfer';
+import { useUpdateToken } from '../../hooks/useUpdateToken';
 import React, { useState } from 'react'
 
 const TransferTokens = () => {

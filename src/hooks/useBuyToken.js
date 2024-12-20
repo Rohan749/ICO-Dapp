@@ -1,6 +1,6 @@
 "use client"
 
-import { PLATFORM_ABI, PLATFORM_ADDRESS } from "@/constants/constants";
+import { PLATFORM_ABI, PLATFORM_ADDRESS } from "../constants/constants";
 import { useEffect } from "react";
 import toast from "react-hot-toast";
 import { parseEther } from "viem";

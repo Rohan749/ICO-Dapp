@@ -1,4 +1,4 @@
-import { useTransferToManager } from "@/hooks/useTransferToManager";
+import { useTransferToManager } from "../../hooks/useTransferToManager";
 import React, { useState } from "react";
 
 const TransferToManager = () => {

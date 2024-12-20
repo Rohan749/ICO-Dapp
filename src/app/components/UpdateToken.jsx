@@ -1,4 +1,4 @@
-import { useUpdateToken } from '@/hooks/useUpdateToken';
+import { useUpdateToken } from '../../hooks/useUpdateToken';
 import React, { useState } from 'react'
 
 const UpdateToken = () => {

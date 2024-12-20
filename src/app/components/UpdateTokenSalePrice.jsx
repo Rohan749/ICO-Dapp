@@ -1,4 +1,4 @@
-import { useUpdateTokenPrice } from '@/hooks/useUpdateTokenPrice';
+import { useUpdateTokenPrice } from '../../hooks/useUpdateTokenPrice';
 import React, { useState } from 'react'
 
 const UpdateTokenSalePrice = () => {

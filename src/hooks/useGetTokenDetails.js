@@ -1,4 +1,4 @@
-import { PLATFORM_ABI, PLATFORM_ADDRESS, TOKEN_ABI, TOKEN_ADDRESS } from "@/constants/constants"
+import { PLATFORM_ABI, PLATFORM_ADDRESS, TOKEN_ABI, TOKEN_ADDRESS } from "../constants/constants"
 import { useAccount, useEnsName, useReadContract, useToken } from "wagmi"
 
 export const useGetTokenDetails = () => {

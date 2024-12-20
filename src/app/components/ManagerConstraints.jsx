@@ -1,4 +1,4 @@
-import { MANAGER } from "@/constants/constants";
+import { MANAGER } from "../../constants/constants";
 import React from "react";
 import { useAccount } from "wagmi";
 

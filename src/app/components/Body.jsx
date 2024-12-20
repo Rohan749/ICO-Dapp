@@ -1,5 +1,5 @@
-import { useGetTokenDetails } from "@/hooks/useGetTokenDetails";
-import { addressReducer } from "@/utils/utils";
+import { useGetTokenDetails } from "../../hooks/useGetTokenDetails";
+import { addressReducer } from "../../utils/utils";
 import { ethers } from "ethers";
 import React, { useEffect, useRef, useState } from "react";
 import { useAccount } from 'wagmi';

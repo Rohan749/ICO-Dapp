@@ -6,12 +6,12 @@ import TransferToManager from "./TransferToManager";
 import TransferEther from "./TransferEther";
 import UpdateToken from "./UpdateToken";
 import UpdateTokenSalePrice from "./UpdateTokenSalePrice";
-import { useWithdrawAll } from "@/hooks/useWithdrawAll";
+import { useWithdrawAll } from "../../hooks/useWithdrawAll";
 import TransferTokens from "./TransferTokens";
 import { useAccount } from "wagmi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { MANAGER } from "@/constants/constants";
-import { useGetTokenDetails } from "@/hooks/useGetTokenDetails";
+import { MANAGER } from "../../constants/constants";
+import { useGetTokenDetails } from "../../hooks/useGetTokenDetails";
 import ManagerConstraints from "./ManagerConstraints";
 
 function Functions() {
