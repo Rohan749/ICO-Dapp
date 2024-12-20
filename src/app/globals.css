@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+button {
+  background: linear-gradient(rgb(0, 162, 255), rgb(0, 60, 255));
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  scale: 1.04;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+input {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  color: #171717;
+}
+
+.bg-custom {
+  background: linear-gradient(#161616, #171717);
+  box-shadow: 0px 0px 20px 4px black;
+}
+
+.container_box > div {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #cccccc;
+  font-size: 18px;
+}
+
+.container_box > div :nth-child(2) {
+  font-weight: 500;
+}
+
+.manager {
+  background: linear-gradient(#9000ff, #7700ae);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 3px black;
+}
