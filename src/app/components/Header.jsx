@@ -13,8 +13,8 @@ const Header = () => {
 
 
   return (
-    <div className='flex items-center justify-between w-full'>
-        <div className='font-bold manager'>
+    <div className='flex items-center justify-between lg:flex-row flex-col w-full gap-5'>
+        <div className='font-bold manager text-sm lg:text-lg'>
             <span>Manager: </span>
             {isLoading ?
             <span className='animate-pulse'>Loading...</span>

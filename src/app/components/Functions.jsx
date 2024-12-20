@@ -33,7 +33,7 @@ function Functions() {
             <ManagerConstraints />
           ) : (
             <>
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex items-center justify-between gap-4 text-sm lg:text-lg">
                 <button onClick={() => setTabs(0)}>Buy Token</button>
                 <button onClick={() => setTabs(1)}>Transfer to manager</button>
                 <button onClick={() => setTabs(2)}>Transfer Ether</button>
@@ -46,8 +46,8 @@ function Functions() {
             </>
           )}
           {address === MANAGER && (
-            <>
-              <h1 className="pt-[3rem]">Access to Manager</h1>
+            <div className="text-sm lg:text-lg text-center">
+              <h1 className="pt-[3rem] pb-5">Access to Manager</h1>
               <div className="flex items-center justify-between gap-4">
                 <button onClick={handleWithdrawAll}>Withdraw all tokens</button>
                 <button onClick={() => setManagerTabs(0)}>Update token</button>
@@ -64,7 +64,7 @@ function Functions() {
                 {managerTabs === 1 && <UpdateTokenSalePrice />}
                 {managerTabs === 2 && <TransferTokens />}
               </div>
-            </>
+            </div>
           )}
         </>
       ) : (

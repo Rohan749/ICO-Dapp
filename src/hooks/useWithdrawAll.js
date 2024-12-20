@@ -11,7 +11,7 @@ export const useWithdrawAll = () => {
     isError,
     writeContractAsync,
   } = useWriteContract();
-    const {refetch} = useGetTokenDetails()
+    const {refetch, refetchUserBalance} = useGetTokenDetails()
 
   const {
     data: txReceipt,
@@ -21,10 +21,10 @@ export const useWithdrawAll = () => {
   } = useWaitForTransactionReceipt({ hash });
 
   useEffect(() => {
-    console.log("TXSUCCESS:", txSuccess)
     if(txSuccess) {
       toast.success("Withdrawal successful!")
-      refetch()
+      refetch();
+      refetchUserBalance();
     }
     else if(isError) {
       toast.error("User rejected the request!")

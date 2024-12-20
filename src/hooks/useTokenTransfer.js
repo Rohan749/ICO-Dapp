@@ -21,7 +21,6 @@ export const useTokenTransfer = () => {
   } = useWaitForTransactionReceipt({ hash });
 
   useEffect(() => {
-    console.log("TXSUCCESS:", txSuccess)
     if(txSuccess) {
       toast.success("Tokens transfered!")
       refetch();

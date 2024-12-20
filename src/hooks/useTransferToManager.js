@@ -22,7 +22,6 @@ export const useTransferToManager = () => {
     } = useWaitForTransactionReceipt({hash});
 
     useEffect(() => {
-        console.log("TXSUCCESS:", txSuccess)
         if(txSuccess) {
           toast.success("Transfered to manager!")
           refetch()

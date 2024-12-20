@@ -14,7 +14,7 @@ export const useGetTokenDetails = () => {
         }
     })
 
-    const {data:tokenUserAccount} = useReadContract({
+    const {data:tokenUserAccount, refetch:refetchUserBalance} = useReadContract({
         abi: PLATFORM_ABI,
         address: PLATFORM_ADDRESS,
         functionName: "getUserTokenBalance",
@@ -37,6 +37,6 @@ export const useGetTokenDetails = () => {
         }
     }
 
-    return {tokenDetails, isLoading, error, refetch}
+    return {tokenDetails, isLoading, error, refetch, refetchUserBalance}
 
 }

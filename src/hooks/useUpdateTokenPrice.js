@@ -21,7 +21,6 @@ export const useUpdateTokenPrice = () => {
   } = useWaitForTransactionReceipt({hash});
 
   useEffect(() => {
-    console.log("TXSUCCESS:", txSuccess)
     if(txSuccess) {
       toast.success("Tokens price updated!")
       refetch()

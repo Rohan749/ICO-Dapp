@@ -24,9 +24,9 @@ const Body = () => {
   const {account, isConnected} = useAccount();
 
   return (
-    <div className="min-h-[60vh] w-full p-5 flex flex-col gap-10 items-center my-10 rounded-xl bg-custom font-bold">
+    <div className="lg:min-h-[60vh] w-full p-5 flex flex-col gap-10 items-center my-10 rounded-xl bg-custom font-bold">
       <h1>Hawk ICO-Token</h1>
-      <div className="min-w-[30rem] container_box">
+      <div className="w-full lg:w-[30rem] container_box">
         <div>
           <span>Token name:</span>
           <span>{tokenDetails?.tokenName}</span>
@@ -49,20 +49,20 @@ const Body = () => {
         </div>
       </div>
       <div className="w-full">
-     <div className="flex items-center justify-between w-full ">
+     <div className="flex items-center justify-between w-full text-sm lg:text-lg">
         <div>Sold Tokens: {tokenDetails?.soldTokens}</div>
         <div>Tokens Left: {tokenDetails?.contractTokenBalance}</div>
      </div>
-    <div className="w-full bg-gray-200 rounded-full h-4">
+    <div className="w-full bg-gray-200 rounded-full h-4 ">
         <div
-          className="bg-blue-500 h-4 rounded-full transition-all"
+          className="bg-blue-500 h-4 rounded-full transition-all "
           style={{ width: `${percentage}%` }}
         ></div>
       </div>
       <div className="text-center">{percentage.toFixed(2)}%</div>
       </div>
 
-        <div>
+        <div className="text-sm lg:text-lg">
           <span>Total tokens in the contract:</span>
           <span>{tokenDetails?.soldTokens + tokenDetails?.contractTokenBalance}</span>
         </div>

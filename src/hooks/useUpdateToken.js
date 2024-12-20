@@ -21,7 +21,6 @@ export const useUpdateToken = () => {
   } = useWaitForTransactionReceipt({hash});
 
   useEffect(() => {
-    console.log("TXSUCCESS:", txSuccess)
     if(txSuccess) {
       toast.success("Tokens address updated!")
       refetch()

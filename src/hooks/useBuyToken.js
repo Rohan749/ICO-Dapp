@@ -22,7 +22,7 @@ export const useBuyToken = () => {
     writeContractAsync,
   } = useWriteContract();
 
-  const {refetch} = useGetTokenDetails()
+  const {refetch, refetchUserBalance} = useGetTokenDetails()
 
   const {
     isPending:isTxPending,
@@ -32,10 +32,10 @@ export const useBuyToken = () => {
   } = useWaitForTransactionReceipt({ hash });
 
   useEffect(() => {
-    console.log("TXSUCCESS:", buySuccess)
     if(txSuccess) {
       toast.success("Tokens buyed!")
-      refetch()
+      refetch();
+      refetchUserBalance();
     }
     else if(buyError) {
       toast.error("User rejected the request!")
